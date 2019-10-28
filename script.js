@@ -24,7 +24,7 @@ function generateBoard() {
                 box.appendChild(document.createTextNode(game.board[i][j]));
                 if(game.board[i][j] == 2)
                     // box.addClass('hero, is-warning');
-                    box.style.background = '#FEDF40'; // yellow
+                    box.style.background = '#FEDF40'; // yellow 
                 if(game.board[i][j] == 4)
                     box.style.background = '#1FD661'; // green
                 if(game.board[i][j] == 8)
@@ -43,16 +43,19 @@ function generateBoard() {
                     box.style.background = '#fea49f'; // Cool Pink  
                 if(game.board[i][j] == 512)
                     box.style.background = '#DCC7AA'; // Coffe and Milk
+                }
+                else {
+                    box.appendChild(document.createTextNode('.'));
+                    
             }
-            else {
-                box.appendChild(document.createTextNode('.'));
-            }
-            box.style.border = '1px solid black';
+            box.style.border = '2.5px solid white';
             box.style.textAlign = 'center';
             box.style.verticalAlign = 'center';
             box.style.padding = '15px';
             box.style.width = '100%';
-            box.style.fontSize = '25px';
+            box.style.fontFamily = 'Iceland';
+            box.style.fontSize = '50px';
+            box.style.color = "#363636";
         }
     }
     body.appendChild(myboard);
