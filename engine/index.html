@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicola's 2048</title>
+    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css"/>
+  </head>
+  <body>
+    <div class="hero is-dark is-fullheight" id="container">
+      <div class="container">
+        <header><h1 class="title" style="padding-top:13px">2048 Game - by Nicola Folchi</h1></header>
+        <br>
+        <div id="score">
+          <span class="subtitle">Score: </span>
+          <span id="scoreButton">0</span>
+        </div>
+        <div class="buttons is-right"id="reset">
+          <button class="button is-info is-centered" id="resetButton" type="button" style="margin-botton:0px;">New Game</button>
+        </div>
+        <div class="container is-centered">
+          <p id="lostMessage" style="text-align:center;"></p>
+          <p id="wonMessage" style="text-align:center;"></p>
+        </div>
+        <div class="level" id="board"></div>
+        <span><b>HOW TO PLAY:</b> Just use the arrow keys to move the numbers on the board. Numbers alike will merge and your goal is to get a 2048 tile or even more. ENJOY!</span> 
+      </div>
+    </div>
+
+    <script type="module" src="../script.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+  </body>
+</html>
