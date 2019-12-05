@@ -1,17 +1,26 @@
 {
   "name": "a07",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "console": "node -r esm run_in_console.js"
   },
-  "author": "",
+  "author": "Nicola Folchi",
   "license": "ISC",
   "dependencies": {
     "bulma": "^0.8.0",
     "esm": "^3.2.25",
     "jquery": "^3.4.1",
     "keypress": "^0.2.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolaFolchi/2048js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NicolaFolchi/2048js/issues"
+  },
+  "homepage": "https://github.com/NicolaFolchi/2048js#readme",
+  "description": ""
 }
